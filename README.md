@@ -33,7 +33,8 @@
 * `accept="image/*"` 可兼容所有手机拥有拍照选项
 * autocapitalize="off" autocorrect="off" 取消IOS输入英文默认首字母大写
 * `http://www.placehold.it/100x200/bgcolor/textcolor&text=hello+world` 生成占位图
-
+* `<meta name="vieport" content=""width=device-width,viewport-fit="cover">` 应对像 iPhoneX 那样的全面屏
+ 
 ## SVG 篇
 * SVG SMIL animation（SVG动画）
 * SVG 的 viewBox 和 preserveAspectRatio
