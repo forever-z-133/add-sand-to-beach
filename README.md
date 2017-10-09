@@ -32,7 +32,7 @@
 * HTML 的 ID 可以用中文
 * `accept="image/*"` 可兼容所有手机拥有拍照选项
 * autocapitalize="off" autocorrect="off" 取消IOS输入英文默认首字母大写
-* `http://www.placehold.it/100x200/bgcolor/textcolor&text=hello+world` 生成占位图
+* `http://www.placehold.it/100x200/&text=hello+world` 生成占位图
 * `<meta name="vieport" content=""width=device-width,viewport-fit="cover">` 应对像 iPhoneX 那样的全面屏
  
 ## SVG 篇
@@ -40,7 +40,7 @@
 * SVG 的 viewBox 和 preserveAspectRatio
 * svg 标签 <text> 的 textLength 等效于宽度，lengthAdjust 设置自动字间距(spacing)或自动词间距(spacingAndGlyphs)
 * svg 最好加上 `xmlns="http://www.w3.org/2000/svg"`，因为加的话直接打开是渲染后的结果，否则只显示代码
-* svg 的 <foreignObject> 嵌套 <body> 解决文本换行的需求
+* svg 的 `<foreignObject>` 嵌套 `<body>` 可解决文本换行的需求
 
 ## 小玩具
 * JSFuck（字符改乱码）
@@ -60,7 +60,6 @@
 * eval(strJSON); | strJSON.parseJSON(); | JSON.parse(strJSON) 的区别
 * $.cssHooks 和 $.cssNumber 拓展 css 属性
 * $.queue 队列，很棒
-* visibilitychange 事件监听从当前浏览器标签移出，对应 document.hidden 的值
 * unref 和 ref （setTimeout 的暂停和重启）
 * canvas 的 bezierCurveTo（贝塞尔曲线）
 * canvas 的 globalCompositeOperation 属性
@@ -72,10 +71,11 @@
 * navigator.onLine 判断是否联网
 * requestIdleCallback 空闲时间运行，与 requestAnimationFrame 合用，当前帧有空闲时间则运行，没有则推迟到下一帧
 * visibilitychange / pointerlockchange / requestPointerLock
-* MSPointer 是 IE10 特有的事件处理，合并了 mouse 和 touch
+* visibilitychange 事件监听从当前浏览器标签移出，对应 document.hidden 的值
+* MSPointer 是 IE10 特有的事件处理，合并了 mouse 和 touch，不推荐
 * createEvent / dispatchEvent 自定义事件及其触发
 * new FormData() 对象可传入 form 元素，或 append(key, value) 来生成数据字符串
-* xhr 还有 upload 属性，可以绑定 load progress abort 等事件
+* xhr 还有 upload 属性，还可以绑定 load progress abort 等事件
 * 将 debugtbs.qq.com 输入微信对话框发送，并打开此链接，可强制使用 webview 而不是 X5
 * WeakMap 生成弱引用对象，使用 get 和 set 对其他对象进行拿取和赋值，不计入垃圾回收
 * ctx.setLineDash([lineWidth, lineGap]) | canvas 画虚线
@@ -86,5 +86,5 @@
 * localeCompare 比较字母大小
 * appendHTML，insertAdjacentHTML，createDocumentFragment 文档片段，及其性能差异
 
-## 面试题套路
+## 面试题的套路
 * new Boolean(false) 是一个对象，所以 if (new Boolean(false)) 是会继续运行的
