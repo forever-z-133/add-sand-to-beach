@@ -29,6 +29,7 @@
 * shape-outside 改变盒子形状，不再只能是方形。shape-margin 与其他盒子的空隙，shape-image-threshold 根据颜色（比如渐变）来改变盒子形状。兼容较差。
 * text-align-last 让最后一行也能进行对齐，ios 不兼容
 * tab-size 对 tab 键打出的空隙进行设置，1代表（1个中文字/2个英文字），兼容一般。
+* mask 或者说 -webkit-mask 对子级也有蒙版效果
 
 ## HTML 篇
 * 不对图片限定尺寸会造成页面布局重绘，影响加载性能
